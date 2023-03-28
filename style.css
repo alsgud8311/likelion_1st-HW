@@ -1,0 +1,15 @@
+* {
+    box-sizing: border-box;
+}
+html{
+    font-size: 10px;
+}
+div{
+    width: 5rem;
+    /* 10px * 5 = 50px */
+}
+
+div{
+    height: 100vh;
+}
+
