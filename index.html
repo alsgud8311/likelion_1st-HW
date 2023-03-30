@@ -10,35 +10,79 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>프로그래머스</title>
     <link rel="stylesheet" href="./style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Do+Hyeon&family=Noto+Sans+KR&display=swap" rel="stylesheet">
+    <script defer src="https://use.fontawesome.com/releases/v5.15.4/js/all.js" integrity="sha384-rOA1PnstxnOBLzCLMcre8ybwbTmemjzdNlILg8O7z1lUkLXozs4DHonlDtnE7fpc" crossorigin="anonymous"></script>
 </head>
 <body>
-    <h1>안녕하세요</h1>
-    <div>
-    <h2 class = "abc">멋쟁이사자처럼 스쿨</h2>
-    <p>멋쟁이사자처럼 스쿨이<br>여러분을 환영합니다</p>
-    <ol>
-        <li>
-            <a href="#">
-                JAVASCRIPT
-            </a>
-        </li>
-        <li>HTML</li>
-        <li>CSS</li>
-    </ol>
-    <ul>
-        <li>백엔드</li>
-        <li>프론트엔드</li>
-        <li>블록체인</li>
-    </ul>
-    <!-- <p>아아아ㅏ아아아ㅏ아</p> -->
+        <div class = "headerLayout">
+            <div class = "headerLogo">
+             <a href="https://programmers.co.kr">
+             <img class="logoImage" src="./MainLogo.png" alt="해당 사진이 없습니다."></a>
+             <a href="https://business.programmers.co.kr"> 기업서비스 </a>
+            </div>
+        </div>    
+        <div class="mainSector">
+            <div class = "leftSide">
+                <div class = "leftComment1">개발자 전용</div>
+                <div class = "leftComment2">반가워요, 개발자의 성장을 돕는<br>프로그래머스입니다.</div> 
+                <div><img src="Background.png" alt="사진이 없습니다." width="483" height="537"></div>
+            </div>
+            <div class="rightSide">
+                <div class="loginSection">
+                    <div class = "loginBox">
+                        <div class="loginAndSignin">
+                            <div class="login">로그인</div>
+                            <div class="signin">회원가입</div>
+                        </div>
+
+                        <div class="infBox">
+                            <div class= "emailText">이메일</div>
+                            <div class= "email">
+                                <input class="emailDesign" type="email" placeholder="이메일을 입력해주세요">
+                            </div>
+                            <div class= "passwordText">
+                                비밀번호
+                                <a href="#" class="bluefont">비밀번호 재설정</a>
+                            </div>
+                            <div class="password">
+                                <input class="passwordDesign" type="password" placeholder="비밀번호를 입력해주세요">
+                            </div>
+                            <button class= "loginButton">로그인</button>
+                            <div class= "otherLogin">
+                                <div class= "otherLoginText">다른 계정으로 로그인 하기</div>
+                                <div class= "loginbuttonZone">
+                                    <button>
+                                        <img src="GoogleLogo.png">
+                                        <div>Google</div>
+                                    </button>
+                                    <button>
+                                        <img src="KakaoLogo.png">
+                                        <div>Kakao</div>
+                                    </button>
+                                    <button>
+                                        <img src="GithubLogo.png">
+                                        <div>Github</div>
+                                    </button>
+                                    <button>
+                                        <img src="FacebookLogo.png">
+                                        <div>Facebook</div>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>    
+                    </div>
+                </div>
+            <div class= "otherInfo">
+                <a href="#">이용약관</a>
+                <hr>
+                <a href="#">개인정보 처리방침</a>
+                <hr>
+                <a href="#">FAQ/문의</a>
+            </div>
+            </div>
+        </div>
     </div>
-    <div class ="container">
-        <img src="이미지 경로"
-         alt="대체 문구"
-         >
-    </div>
-    img{
-        max-width: 100%;
-    }
 </body>
 </html>
