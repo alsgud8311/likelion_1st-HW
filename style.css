@@ -11,31 +11,33 @@ a{
     text-decoration: none;
 }
 
+::placeholder{
+    color:#d2d2d2;
+}
+
 body{
     font-family: 'Noto Sans KR', sans-serif;
     margin: 0;
-    display: grid;
+    display: flex;
     width: 100%;
-    grid-template-columns: 1fr;
-    grid-template-rows: 100px auto;
     background: #06f;
-    grid-template-areas: 
-    "header"
-    "main";
-    place-items: center;
+    min-height: 100vh;
+    flex-direction: column;
+ 
 }
 
-.headerLayout{
-    grid-area: header;
-    width: 100vw;
-    height: 10vh;
-    background: #06f;
+.headerSector{
+    display: flex;
+    width: 100%;
+    height: 4.75rem;
+    align-items: center;
+    justify-content: center;
     font-size: .875rem;
 }
 
 .headerLogo{
     display: flex;
-    width: 100%;
+    width: 1200px;
     height: 4.75rem;
     align-items: center;
     justify-content: space-between;
@@ -49,16 +51,21 @@ body{
     object-fit: contain;
 }
 
+.mainLayout{
+    display: flex;
+    justify-content: center;
+}
 
 .mainSector{
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: auto 470px;
     grid-template-rows: 1fr;
     grid-template-areas: 
         "leftSide rightSide";
     padding: 0 1.25rem;   
-    width: 100%
+    width: 1200px;
 }
+
 
 .leftSide{
     grid-area: leftSide;
@@ -73,8 +80,8 @@ body{
 }
 
 .leftComment2{
-    font-size: 20px;
-    font-weight: bold;
+    font-size: 1.5625rem;
+    font-weight: 900;
     color: white;
 }
 
@@ -121,6 +128,7 @@ body{
     background-color: #fff;
     color: #0078ff;
     font-weight: 700;
+    cursor: pointer;
 }
 
 .signin{
@@ -136,6 +144,7 @@ body{
     background-color: #f4f4f4;
     color: black;
     font-weight: 700;
+    cursor: pointer;
 }
 
 .infBox{
@@ -153,21 +162,41 @@ body{
     font-weight: 1000;
 }
 
-.email .password{
-    display: flex;
+.email{
     width: 100%;
+    display: flex;
+    position: relative;
     align-items: center;
 }
-.emailDesign .passwordDesign{
-    padding-left: 2.75rem;
+
+.emailIcon{
+    position: absolute;
+    left: 1.0625rem;
+    color: #d2d2d2;
 }
+
+.fa-xs{
+    font-size: 18px;
+}
+
 .email input {
-    justify-content: center;
     width: 100%;
     height: 2.875rem;
     padding: 0.5rem 2.5rem 0.5rem 0.875rem;
     border: 1px solid #d2d2d2;
-    border-radius: 0.25;
+    border-radius: 0.25rem;
+    color:#d2d2d2;
+}
+
+.email input.emailDesign{
+    padding-left: 2.75rem;
+}
+
+.password{
+    width: 100%;
+    display: flex;
+    position: relative;
+    align-items: center;
 }
 
 .passwordText{
@@ -180,6 +209,10 @@ body{
     justify-content: space-between;
 }
 
+.password input.passwordDesign{
+    padding-left: 2.75rem;
+}
+
 .bluefont{
     color:#0066ff;
 }
@@ -190,7 +223,23 @@ body{
     height: 2.875rem;
     padding: 0.5rem 2.5rem 0.5rem 0.875rem;
     border: 1px solid #d2d2d2;
-    border-radius: 0.25;
+    border-radius: 0.25rem;
+}
+
+.passwordIcon{
+    position: absolute;
+    left: 1.0625rem;
+    color: #d2d2d2;
+}   
+
+.eyeIcon{
+    position: absolute;
+    right: 0.5rem;
+    cursor: pointer;
+}
+.eyeIcon img{
+    width: 35px;
+    height: 35px;
 }
 
 .loginButton{
@@ -202,7 +251,6 @@ body{
     color: #fff;
     font-size: 1.25rem;
     font-weight: 700;
-    border-color: #fff;
     border-style: none;
     cursor: pointer;
 }
@@ -229,7 +277,7 @@ body{
 
 button{
     border: 0;
-    background-color: none;
+    background-color: #fff;
     cursor: pointer;
 }
 

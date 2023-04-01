@@ -11,20 +11,24 @@
     <title>프로그래머스</title>
     <link rel="stylesheet" href="./style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Do+Hyeon&family=Noto+Sans+KR&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@500&display=swap" rel="stylesheet">
     <script defer src="https://use.fontawesome.com/releases/v5.15.4/js/all.js" integrity="sha384-rOA1PnstxnOBLzCLMcre8ybwbTmemjzdNlILg8O7z1lUkLXozs4DHonlDtnE7fpc" crossorigin="anonymous"></script>
 </head>
 <body>
-        <div class = "headerLayout">
+        <div class = "headerSector">
             <div class = "headerLogo">
-             <a href="https://programmers.co.kr">
-             <img class="logoImage" src="./MainLogo.png" alt="해당 사진이 없습니다."></a>
-             <a href="https://business.programmers.co.kr"> 기업서비스 </a>
+                <a href="https://programmers.co.kr">
+                <img class="logoImage" src="./MainLogo.png" alt="해당 사진이 없습니다."></a>
+                <a href="https://business.programmers.co.kr"> 기업서비스 </a>
             </div>
+            
         </div>    
         
+        <div class= "mainLayout">
         <div class="mainSector">
+        
             <div class = "leftSide">
                 <div class = "leftComment1">개발자 전용</div>
                 <div class = "leftComment2">반가워요, 개발자의 성장을 돕는<br>프로그래머스입니다.</div> 
@@ -41,7 +45,10 @@
                         <div class="infBox">
                             <div class= "emailText">이메일</div>
                             <div class= "email">
-                                <input class="emailDesign" type="email" placeholder="이메일을 입력해주세요">
+                                <input name = "email" class="emailDesign" type="email" placeholder="이메일을 입력해주세요">
+                                <div class= "emailIcon">
+                                    <i class="far fa-envelope fa-xs"></i>
+                                </div>
                             </div>
                             <div class= "passwordText">
                                 비밀번호
@@ -49,6 +56,12 @@
                             </div>
                             <div class="password">
                                 <input class="passwordDesign" type="password" placeholder="비밀번호를 입력해주세요">
+                                <div class="passwordIcon">
+                                    <i class="fas fa-lock fa-xs"></i>
+                                </div>
+                                <div class="eyeIcon">
+                                    <img src="Eye1.png" alt="!">
+                                </div>
                             </div>
                             <button class= "loginButton">로그인</button>
                             <div class= "otherLogin">
@@ -78,11 +91,12 @@
             <div class= "otherInfo">
                 <a href="#">이용약관</a>
                 <hr>
-                <a href="#">개인정보 처리방침</a>
+                <a href="#" style="font-weight: 900;">개인정보 처리방침</a>
                 <hr>
                 <a href="#">FAQ/문의</a>
-            </div>
-            </div>
+            </div>   
+        </div>
+        </div> 
         </div>
     </div>
 </body>
